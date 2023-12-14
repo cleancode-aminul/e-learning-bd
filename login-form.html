@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  style="background-color: #00010f;">
+    <div class="min-h-screen shadow-lg flex items-center justify-center p-4">
+        <div class="bg-white shadow-md rounded-lg p-6 max-w-md w-full">
+            <p class="text-2xl font-bold mb-4 text-center text-[#05b26f]">Log-in</p>
+            <div class="space-y-4">
+                <div class="form-section">
+                    <label for="text" class="block font-semibold text-md py-2">Username:</label>
+                    <input type="text" class="w-full border p-2" required>
+                </div>
+
+                <div class="form-section">
+                    <label for="password" class="block font-semibold text-md py-2">Password:</label>
+                    <input type="password" class="w-full border p-2" required>
+                    <input type="checkbox" class="mt-2" id="checkbox-size">
+                </div>
+
+                <button class="w-full bg-blue-500 text-white p-2 rounded">Log-In</button>
+
+                <div class="flex justify-between">
+                    <a href="#" class="font-semibold text-md">Forget password?</a>
+                    <a href="registration-form.html" class="font-semibold text-md">Create an account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

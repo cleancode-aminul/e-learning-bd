@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body  style="background-color: #00010f;">
+
+    <div class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md py-12">
+        <h2 class="text-2xl font-semibold mb-6">School Admission Form</h2>
+
+        <form id="admissionForm">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="mb-4">
+                    <label for="firstName" class="block text-sm font-medium text-gray-600">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+
+                <div class="mb-4">
+                    <label for="lastName" class="block text-sm font-medium text-gray-600">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-600">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="dob" class="block text-sm font-medium text-gray-600">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <div class="mb-4">
+                <label for="grade" class="block text-sm font-medium text-gray-600">Grade</label>
+                <select id="grade" name="grade" class="mt-1 p-2 w-full border rounded-md">
+                    <option value="grade1">Grade 1</option>
+                    <option value="grade2">Grade 2</option>
+                    <option value="grade3">Grade 3</option>
+                    <!-- Add more grade options as needed -->
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <input type="checkbox" id="agree" name="agree" class="mr-2">
+                <label for="agree" class="text-sm text-gray-600">I agree to the terms and conditions</label>
+            </div>
+
+        <div class="flex items-center justify-between">
+          <div class="mt-6">
+            <button type="button" onclick="validateForm()" class="py-2 px-4 bg-blue-500 text-white rounded-md"><a href="registration-form.html">Submit</a></button>
+        </div>
+        <div class="mt-6">
+            <button type="button" onclick="validateForm()" class="py-2 px-4 bg-blue-500 text-white rounded-md"><a href="login-form.html">Login</a></button>
+        </div>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const dob = document.getElementById('dob').value;
+            const grade = document.getElementById('grade').value;
+            const agree = document.getElementById('agree').checked;
+
+            if (!firstName || !lastName || !email || !phone || !dob || !grade || !agree) {
+                alert('Please fill in all fields and agree to the terms.');
+                return;
+            }
+
+            // You can perform additional validation if needed
+
+            // If all validation passes, you can submit the form or perform other actions
+            alert('Form submitted successfully!');
+        }
+    </script>
+
+</body>
+</html>

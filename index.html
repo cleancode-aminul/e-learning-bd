@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-learning Bd | Home</title>
+    <!-- Add the Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" font-Roboto">
+ <div id="">
+    <nav class="bg-[#05b26f] fixed top-0 w-full z-50 px-4">
+        <div class="container mx-auto  flex justify-between items-center">
+            <div>
+                <a href="#" class="text-white text-lg font-bold sm:py-12"><img src="images/img.png" class="w-20" alt="" /></a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#home" class="text-white text-lg font-bold">Home</a>
+                <a href="#book" class="text-white text-lg font-bold">Book</a>
+                <a href="#courses" class="text-white text-lg font-bold">Courses</a>
+                <a href="#others" class="text-white text-lg font-bold">Others</a>
+                <a href="#contact" class="text-white text-lg font-bold">Contact</a>
+                <button class="bg-white rounded-md p-2 font-bold">
+                    <a href="registration-form.html">Sign Up</a>
+                </button>
+            </div>
+            <!-- Mobile Menu Button (hidden on larger screens) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-white">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Menu (hidden on larger screens) -->
+    <div id="mobile-menu" class="md:hidden fixed inset-0 bg-[#05b26f] bg-opacity-75 z-50 hidden p-4" >
+        <div class="flex justify-end p-4">
+            <button id="close-mobile-menu" class="text-white">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+            <a href="#home" class="text-white sm:text-2xl font-bold">Home</a>
+            <a href="#book" class="text-white sm:text-2xl font-bold">Book</a>
+            <a href="#courses" class="text-white sm:text-2xl font-bold">Courses</a>
+            <a href="#others" class="text-white sm:text-2xl font-bold">Others</a>
+            <a href="#contact" class="text-white sm:text-2xl font-bold">Contact</a>
+            <button class="bg-white rounded-md p-2">
+                <a href="registration-form.html">Sign Up</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- hero sectin start -->
+   <div class="bg-img">
+    <div class="container mx-auto lg:px-10 lg:pt-12 h-full">
+        <div class="hero-section p-4 flex flex-col lg:flex-row justify-between items-center" id="home">
+            <div class="left-box lg:w-1/2 md:w-1/2 xl:w-1/2 w-full lg:order-1 md:order-1 xl:order-1 order-2">
+                <div class="paragraph lg:text-left">
+                    <h3 class="text-2xl text-[#027c55]	 font-bold ">Are you ready to learn!</h3><br>
+                    <h2 class="lg:text-5xl font-bold text-[#05b26f] text-4xl">Empowering Learning<br><span
+                            class="learn-fun">Journeys Online.</span></h2>
+                    <p class="py-6 lg:w-10/12 text-justify text-[#484950] font-semibold text-md">Explore our vibrant school community online. Discover
+                        academic excellence, engaging activities, supportive resources, and stay informed about upcoming
+                        events. Join us in fostering education.
+                    </p>
+                    <a href="#"
+                        class="sign-in-btn bg-[#05b26f] text-white p-2 active:bg-[#027c55] rounded-md font-bold">Get
+                        Started</a>
+                </div>
+            </div>
+            <div class="right-box lg:w-1/2 md:w-1/2 xl:w-1/2 w-full lg:order-2 md:order-2 xl:order-2 order-1">
+                <img src="images/banner.png" alt="" class="w-full lg:w-600px">
+            </div>
+        </div>
+    </div>
+   </div>
+ </div>
+    <br><br>
+<div class="p-4">
+    
+    <marquee behavior="" direction="">
+        <p class="text-[#484950] font-semibold text-md">Welcome to <span class="font-bold">E-Learning</span> We should provide you to better performance.We always
+            try to make a good nations,who can gain skill and invest it on the country.</p>
+    </marquee>
+</div>
+    <!-- hero sectin end -->
+
+    <!-- main section start -->
+    <div class="container mx-auto lg:px-10 py-24" id="book">
+        <div class="text-center text-3xl text-[#05b26f] font-bold ">
+            Main Purpose
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1  md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 py-20">
+            <!-- card-1 -->
+            <div class="flex items-center justify-center p-4">
+                <div class="card w-full shadow-xl hover:shadow-md px-12 py-8 rounded-lg bg-white">
+                    <div class="flex items-center justify-center">
+                        <img src="images/book.png" width="80px" alt="">
+                    </div>
+                    <div class="text-lg font-bold items-center justify-center flex">
+                        100+ Topic
+                    </div>
+                    <div class="text-lg items-center justify-center flex">
+                        Learn anythings
+                    </div>
+                </div>
+            </div>
+            <!-- card-2 -->
+            <div class="flex items-center justify-center p-4">
+                <div class="card w-full shadow-xl hover:shadow-md px-12 py-8 rounded-lg bg-white">
+                    <div class="flex items-center justify-center">
+                        <img src="images/student.png" width="80px" alt="">
+                    </div>
+                    <div class="text-lg font-bold items-center justify-center flex">
+                        1500+ Student
+                    </div>
+                    <div class="text-lg items-center justify-center flex">
+                        Learn anythings
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 -->
+            <div class="flex items-center justify-center p-4">
+                <div class="card w-full shadow-xl hover:shadow-md px-12 py-8 rounded-lg bg-white">
+                    <div class="flex items-center justify-center">
+                        <img src="images/test.png" width="110px" alt="">
+                    </div>
+                    <div class="text-lg font-bold items-center justify-center flex">
+                        9K+ Test Token
+                    </div>
+                    <div class="text-lg items-center justify-center flex">
+                        Learn anythings
+                    </div>
+                </div>
+            </div>
+            <!-- card-4 -->
+            <div class="flex items-center justify-center p-4">
+                <div class="card w-full shadow-xl hover:shadow-md px-12 py-8 rounded-lg bg-white">
+                    <div class="flex items-center justify-center">
+                        <img src="images/right.png" width="80px" alt="">
+                    </div>
+                    <div class="text-lg font-bold items-center justify-center flex">
+                        500+ Debate
+                    </div>
+                    <div class="text-lg items-center justify-center flex">
+                        Learn anythings
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section end -->
+
+    <!-- course sectin start -->
+    <div class="container mx-auto lg:px-10" id="courses">
+        <div class="text-center text-3xl text-[#05b26f] font-bold ">
+           Online Courses
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4 p-4 py-20">
+
+            <!-- card-1 -->
+            <div class="flex items-center justify-center">
+                <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                    <div class="flex items-center justify-center">
+                        <img src="images/class-1.jpg" class="border-4" alt="">
+                    </div>
+                    <div class="flex items-center justify-between py-4">
+                        <div>
+                            <div class="text-2xl text-[#05b26f] font-bold">Physics Course</div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#437c55] font-bold"></i>
+                                <div class="text-md ms-2 font-bold text-[#437c55]"> Total: 56 Hourse</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="sign-in-btn bg-[#05b26f] text-white p-2 active:bg-[#027c55] rounded-md font-bold">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2 -->
+            <div class="flex items-center justify-center">
+                <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                    <div class="flex items-center justify-center">
+                        <img src="images/class-2.jpg" class="border-4" alt="">
+                    </div>
+                    <div class="flex items-center justify-between py-4">
+                        <div>
+                            <div class="text-2xl text-[#05b26f] font-bold">Physics Course</div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#437c55] font-bold"></i>
+                                <div class="text-md ms-2 font-bold text-[#437c55]"> Total: 56 Hourse</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="sign-in-btn bg-[#05b26f] text-white p-2 active:bg-[#027c55] rounded-md font-bold">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 -->
+            <div class="flex items-center justify-center">
+                <div class="card shadow-xl hover:shadow-md rounded-lg border-black border-4 border-white	p-4">
+                    <div class="flex items-center justify-center">
+                        <img src="images/online school.jpg" class="border-4" alt="">
+                    </div>
+                    <div class="flex items-center justify-between py-4">
+                        <div>
+                            <div class="text-2xl text-[#05b26f] font-bold">Physics Course</div>
+                            <div class="flex items-center">
+                                <i class="fa-regular fa-clock text-[#437c55] font-bold"></i>
+                                <div class="text-md ms-2 font-bold text-[#437c55]"> Total: 56 Hourse</div>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class="sign-in-btn bg-[#05b26f] text-white p-2 active:bg-[#027c55] rounded-md font-bold">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- course sectin end -->
+
+<!-- testimonial section start -->
+<div class="container mx-auto lg:px-40 py-20 p-4" id="others">
+    <div class="text-center text-3xl text-[#05b26f] font-bold ">
+        Our Students Feedback
+    </div>
+    <div class="text-center text-md text-[#484950] font-bold ">
+        "Learning is the key, knowledge sets my spirit free."
+
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 py-8">
+        <div class="bg-white shadow-lg hover:shadow-md border-black p-4">
+            <div class="flex items-center justify-start">
+                <img src="images/student (1).png" width="80px" class="rounded-2xl" alt="">
+                <div class="block ms-2">
+                    <div class="text-xl font-bold text-[#05b26f]">Sanjida</div>
+                    <div class="text-md">Student</div>
+                </div>
+            </div>
+            <div class="text-md py-8 font-[Roboto] text-[#484950] sm:text-justify">
+                Education is the compass guiding our journey to knowledge, empowering us to navigate the vast seas of understanding. As students, we anchor ourselves in curiosity, hoisting the sails of ambition. Each lesson is a wind that propels us toward growth. In this academic voyage, we learn not only from textbooks but from the very waves of challenges that shape us into resilient sailors of success.
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+<!-- testimonial section end -->
+
+<!-- contact sectin start -->
+<div class="container mx-auto lg:px-40 p-4">
+    <div class="text-center text-3xl text-[#05b26f] font-bold ">
+     Contact Now
+    </div>
+    <div style="max-width: 600px; margin: 50px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" class="shadow-lg">
+        <form style="display: grid; gap: 20px;">
+          <input type="text" id="name" name="name" style="width: 100%; padding: 10px; box-sizing: border-box; background-color: #f0f0f0;" required placeholder="Enter your name" placeholderStyle="color: black; background-color: grey;">
+          <input type="email" id="email" name="email" style="width: 100%; padding: 10px; box-sizing: border-box; background-color: #f0f0f0;" required placeholder="Enter your email" placeholderStyle="color: black; background-color: grey;">
+          <textarea id="message" name="message" rows="4" style="width: 100%; padding: 10px; box-sizing: border-box; background-color: #f0f0f0;" required placeholder="Enter your message" placeholderStyle="color: black; background-color: grey;"></textarea>
+      
+          <button type="submit" style="background-color: #05b26f; font-weight: bold; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+        </form>
+      </div>
+      
+      
+</div>
+<!-- contact sectin end -->
+
+
+
+
+
+<div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 w-full py-12">
+    <div class="w-full h-80">
+        <div class="map h-full">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7303.995659317101!2d90.3733340880166!3d23.74745680543585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdhanmoni%209a!5e0!3m2!1sen!2sbd!4v1702486628182!5m2!1sen!2sbd" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- footer section start -->
+<footer class="bg-[#05b26f] text-white py-12" id="contact">
+    <div class="container mx-auto lg:px-10 flex flex-wrap justify-center">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-">
+            <h3 class="text-2xl font-bold mb-4">About Us</h3>
+            <p class="text-white font-semibold text-md">School is a place for learning and growth, fostering knowledge, friendships, and skills. It shapes futures, building character and community.
+            </p>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-">
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p class="text-white font-semibold text-md">123 School Street, Dhanmondi, Dhaka</p>
+            <p class="text-white font-semibold text-md">Phone: 01319307170</p>
+            <p class="text-white font-semibold text-md mb-8">Email: info.aminul.real@gmail.com</p>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-">
+            <h3 class="text-2xl font-bold mb-4">Quick Links</h3>
+            <ul>
+                <li><a href="#" class="text-white font-semibold text-md">Home</a></li>
+                <li><a href="#" class="text-white font-semibold text-md">Courses</a></li>
+                <li><a href="#" class="text-white font-semibold text-md">Admissions</a></li>
+                <li><a href="#" class="text-white font-semibold text-md">Events</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt- text-center">
+        <p class="text-white font-semibold text-md">&copy; 2024 Aminul Islam. All rights reserved.</p>
+    </div>
+</footer>
+<!-- footer section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document
+            .getElementById("mobile-menu-btn")
+            .addEventListener("click", function () {
+                document.getElementById("mobile-menu").classList.toggle("hidden");
+            });
+
+        document
+            .getElementById("close-mobile-menu")
+            .addEventListener("click", function () {
+                document.getElementById("mobile-menu").classList.add("hidden");
+            });
+    </script>
+</body>
+
+</html>
